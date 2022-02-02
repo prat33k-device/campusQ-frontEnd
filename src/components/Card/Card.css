@@ -1,0 +1,35 @@
+
+
+.card {
+    background-color: white;
+    height: 300px;
+    width: 550px;
+    margin: 20px auto 30px auto;
+    border: 1px solid grey;
+}
+
+.card-heading {
+    display: flex;
+    flex-direction: row;
+    padding: 15px 0 0 20px;
+}
+
+.card-img {
+    border-radius: 100%;
+}
+
+.name-div {
+    margin-left: 20px;
+}
+
+.name-div > p {
+    color: grey;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body > p {
+    padding-top: 10px;
+}
