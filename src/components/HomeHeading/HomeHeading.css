@@ -4,6 +4,7 @@
     flex-direction: row;
     height: 250px;
     padding: 70px 20px 40px 20px;
+    color: black;
 }
 
 .home-content {
@@ -17,7 +18,7 @@
 
 .content {
     margin: 20px 10px;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 1.2rem;
 }
 

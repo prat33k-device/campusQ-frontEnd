@@ -15,7 +15,9 @@ function Canvas() {
 
     }
 
-    return <div id="canvas">
+    return <React.Fragment>
+
+    <div id="canvas">
         <button id="ask-btn" onClick={handleAskHere}>
             <div className="ask-btn-div">
                 <span>Ask Here</span>
@@ -58,9 +60,9 @@ function Canvas() {
             
         </div>
         
-        <img id="background-img" alt="" src="https://picsum.photos/1525/1000" />
-    </div>;
 
+    </div>
+    </React.Fragment>;
 }
 
 export default Canvas;

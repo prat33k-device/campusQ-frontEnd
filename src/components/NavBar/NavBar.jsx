@@ -21,7 +21,7 @@ function NavBar() {
         <h1>Campus<span>Q</span></h1>
 
         <form>
-            <input id="search-input" type="text" placeholder="Search"></input>
+            <input id="search-input" type="search" placeholder="Search"></input>
         </form>
 
         <button  className="nav-btn" onClick={handleCollab}>
