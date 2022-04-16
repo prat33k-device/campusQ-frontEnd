@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Canvas.css";
 import Card from "../Card/Card";
 import HomeHeading from "../HomeHeading/HomeHeading";
@@ -38,12 +39,14 @@ function Canvas() {
     return <React.Fragment>
 
     <div id="canvas">
+        <Link to="/askque">
         <button id="ask-btn" onClick={handleAskHere}>
             <div className="ask-btn-div">
                 <span>Ask Here</span>
                 <CreateIcon />
             </div>     
         </button>
+        </Link>
 
         <div id="vertical-line">
             <span>.</span>

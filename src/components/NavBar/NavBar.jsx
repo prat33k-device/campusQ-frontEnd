@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import "./NavBar.css";
 import PeopleIcon from '@mui/icons-material/People';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -27,7 +28,9 @@ function NavBar() {
 
     return <div id="navbar">
         <div id="menu-icon"><MenuIcon sx={{ fontSize: 55 }} color="action"/></div>
-        <h1>Campus<span>Q</span></h1>
+        
+            <h1><NavLink to="/">Campus<span>Q</span></NavLink></h1>
+        
 
         <form>
             <input className={showSearch? "show-search" : "hide-search"} id="search-input" type="search" placeholder="Search"></input>
@@ -36,11 +39,11 @@ function NavBar() {
         <button  className="nav-btn slide-bar" onClick={handleCollab}>
             <div className="icon-div">
                 <div className="icon-inner-div"><PeopleIcon /></div>
-                <span>Collaboration</span>
+                <span><NavLink to="/collab">Collaboration</NavLink></span>
             </div> 
         </button>
-        <button className="nav-btn slide-bar" onClick={handleResource}>Resources</button>
-        <button className="nav-btn slide-bar" onClick={handleContact}>Contact Us</button>
+        <button className="nav-btn slide-bar" onClick={handleResource}><NavLink to="/resources" >Resources</NavLink></button>
+        <button className="nav-btn slide-bar" onClick={handleContact}><NavLink to="/contact" >Contact Us</NavLink></button>
 
         <button className="login-btn slide-bar">
             <div className="icon-div">
